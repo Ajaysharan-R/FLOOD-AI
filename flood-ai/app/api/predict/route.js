@@ -7,7 +7,7 @@ export async function GET(req) {
 
   try {
     const backendRes = await fetch(
-      `http://127.0.0.1:8000/predict?rainfall=${rainfall}&slope=${slope}`
+     `https://flood-ai-backend-bvqq.onrender.com/predict?rainfall=${rainfall}&slope=${slope}`
     );
 
     const data = await backendRes.json();
